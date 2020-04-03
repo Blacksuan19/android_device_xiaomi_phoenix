@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_phoenix.mk
+    $(LOCAL_DIR)/havoc_phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_phoenix-user \
-    aosip_phoenix-userdebug \
-    aosip_phoenix-eng
+    havoc_phoenix-user \
+    havoc_phoenix-userdebug \
+    havoc_phoenix-eng
