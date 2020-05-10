@@ -7,10 +7,13 @@
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+
+# official tag
+export export HAVOC_BUILD_TYPE=Official
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_phoenix
+PRODUCT_NAME := havoc_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30
