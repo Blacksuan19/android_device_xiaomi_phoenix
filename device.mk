@@ -67,7 +67,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/lineage-sdk \
     $(LOCAL_PATH)/overlay/packages/apps/Snap
 
 # Permissions
