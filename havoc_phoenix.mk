@@ -9,8 +9,10 @@ $(call inherit-product, device/xiaomi/phoenix/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
-# official tag
+# official tag and gapps
 export export HAVOC_BUILD_TYPE=Official
+export export WITH_GAPPS=true 
+export export TARGET_GAPPS_ARCH=arm64
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := havoc_phoenix
