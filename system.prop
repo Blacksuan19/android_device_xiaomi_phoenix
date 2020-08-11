@@ -34,4 +34,4 @@ sys.displayfeature_hidl=true
 vendor.hbm.enable=true
 
 # maintainer
-ro.havoc.maintainer=Blacksuan19
+ro.havoc.maintainer=chiranth
