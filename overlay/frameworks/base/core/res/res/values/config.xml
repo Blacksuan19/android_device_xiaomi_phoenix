@@ -58,4 +58,20 @@
     <!-- The default peak refresh rate for a given device. Change this value if you want to allow
          for higher refresh rates to be automatically used out of the box -->
     <integer name="config_defaultPeakRefreshRate">120</integer>
+
+    <!-- Show battery icon in the QS Panel instead of in the header -->
+    <bool name="config_batteryInQSPanel">false</bool>
+
+    <!-- Whether device supports variable refresh rate -->
+    <bool name="config_hasVariableRefreshRate">true</bool>
+
+    <!-- Do the battery/notification LEDs support pulsing?
+         Used to decide if we show pulse settings -->
+    <bool name="config_ledCanPulse">true</bool>
+
+    <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
+    <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
+
+    <!-- Whether device has a physical display cutout -->
+    <bool name="config_physicalDisplayCutout">true</bool>
 </resources>

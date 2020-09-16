@@ -8,7 +8,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/phoenix/phoenix-vendor.mk)
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -107,6 +106,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# ANXCamera
+$(call inherit-product-if-exists, vendor/aeonax/ANXCamera/anx-vendor.mk)
 
 # Inherit from sm6150-common
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)

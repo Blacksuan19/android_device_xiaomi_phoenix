@@ -12,3 +12,6 @@ persist.vendor.audio.calfile4=/vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acd
 persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
 persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
 persist.vendor.audio.calfile7=/vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
+
+# maintainer
+ro.havoc.maintainer=Blacksuan19

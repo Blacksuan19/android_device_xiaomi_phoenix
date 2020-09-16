@@ -40,7 +40,7 @@ ODM_MANIFEST_PHOENIX_FILES := $(DEVICE_PATH)/manifest_phoenix.xml
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
-TARGET_KERNEL_CONFIG := vendor/lineage_phoenix_defconfig
+TARGET_KERNEL_CONFIG := phoenix_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
@@ -51,6 +51,9 @@ BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
+
+# ANXCamera
+-include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/phoenix/BoardConfigVendor.mk
