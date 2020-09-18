@@ -12,6 +12,10 @@ $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 # official tag
 export export HAVOC_BUILD_TYPE=Official
 
+# maintainer
+PRODUCT_PROPERTIES_OVERRIDES += \
+	ro.havoc.maintainer = "Blacksuan19"
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := havoc_phoenix
 PRODUCT_DEVICE := phoenix
