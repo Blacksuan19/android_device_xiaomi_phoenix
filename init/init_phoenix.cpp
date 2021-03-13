@@ -124,7 +124,7 @@ void vendor_load_properties() {
     region = GetProperty("ro.boot.hwc", "");
 
     if (region == "CN") {
-        char const fp[] = "google/sunfish/sunfish:11/RQ1A.210205.004/7038034:user/release-keys";
+        char const fp[] = "google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys";
 
         for (const auto &source : ro_props_default_source_order) {
 
@@ -138,7 +138,7 @@ void vendor_load_properties() {
         }
         property_override("ro.build.description", "phoenix-user 10 QKQ1.190825.002 V11.0.9.0.QGHCNXM release-keys");
     } else if (region == "INDIA") {
-       char const fp[] = "google/sunfish/sunfish:11/RQ1A.210205.004/7038034:user/release-keys";
+       char const fp[] = "google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys";
 
         for (const auto &source : ro_props_default_source_order) {
 
