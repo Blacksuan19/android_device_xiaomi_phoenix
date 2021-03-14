@@ -168,6 +168,9 @@ BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
+# ANXCamera
+-include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/phoenix/BoardConfigVendor.mk
 
