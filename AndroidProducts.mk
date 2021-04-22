@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_phoenix.mk
+    $(LOCAL_DIR)/havoc_phoenix.mk
+
+COMMON_LUNCH_CHOICES := \
+    havoc_phoenix-user \
+    havoc_phoenix-userdebug \
+    havoc_phoenix-eng

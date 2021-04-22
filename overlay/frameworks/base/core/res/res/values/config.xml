@@ -614,11 +614,21 @@
     <!-- Whether device has fingerprint on power button -->
     <bool name="config_powerButtonFingerprint">true</bool>
 
-    <!-- Does the battery LED support multiple colors?
-         Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">false</bool>
-
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/bms/fastcharge_mode</string>
+    <!-- Whether device supports variable refresh rate -->
+    <bool name="config_hasVariableRefreshRate">true</bool>
 
+    <!-- Do the battery/notification LEDs support pulsing?
+         Used to decide if we show pulse settings -->
+    <bool name="config_ledCanPulse">true</bool>
+
+    <!-- Adaptive charging -->
+    <integer name="config_adaptiveChargingCutoffLevel">95</integer>
+    <integer name="config_adaptiveChargingResumeLevel">50</integer>
+    <integer name="config_adaptiveChargingCutoffTemperature">45</integer>
+    <integer name="config_adaptiveChargingResumeTemperature">40</integer>
+    <string name="config_adaptiveChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+    <string name="config_adaptiveChargingSuspendValue" translatable="false">1</string>
+    <string name="config_adaptiveChargingResumeValue" translatable="false">0</string>
 </resources>
