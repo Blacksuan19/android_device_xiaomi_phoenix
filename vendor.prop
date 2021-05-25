@@ -212,3 +212,6 @@ persist.dbg.wfc_avail_ovr=1
 
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
+
+# maintainer
+ro.havoc.maintainer=Blacksuan19
