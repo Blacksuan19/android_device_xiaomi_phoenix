@@ -631,4 +631,11 @@
     <string name="config_adaptiveChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
     <string name="config_adaptiveChargingSuspendValue" translatable="false">1</string>
     <string name="config_adaptiveChargingResumeValue" translatable="false">0</string>
+
+    <!-- Default value for proximity check on screen wake
+     NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
+    <bool name="config_proximityCheckOnWake">true</bool>
+    <integer name="config_proximityCheckTimeout">500</integer>
+    <bool name="config_proximityCheckOnWakeEnabledByDefault">false</bool>
+
 </resources>
